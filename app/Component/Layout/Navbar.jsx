@@ -58,7 +58,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-
             {/* Header */}
             <header>
                 <div className="max-w-7xl mx-auto mb-5">
@@ -72,7 +71,6 @@ const Navbar = () => {
                                     className=""
                                 />
                             </div>
-
                             {/* Nav Links */}
                             <div className="hidden lg:flex items-center gap-1">
                                 <a href="#" className="px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">Home</a>
