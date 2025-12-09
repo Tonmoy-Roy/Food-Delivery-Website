@@ -162,12 +162,12 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className=' bg-slate-900 text-white py-3 md:pl-35 pl-10'>
+            <div className=' bg-slate-900 text-white md:pl-35 pl-10'>
                 <div className='justify-between md:flex'>
-                    <div className='mb-5'>
+                    <div className='mb-5 mt-3'>
                         <p>Order.uk Copyright 2024, All Rights Reserved.</p>
                     </div>
-                    <div className='md:flex gap-4 mr-20'>
+                    <div className='md:flex gap-4 mr-20 mt-3'>
                         <p>Privacy Policy</p>
                         <p>Terms</p>
                         <p>Pricing</p>
