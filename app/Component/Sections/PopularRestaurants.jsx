@@ -1,15 +1,15 @@
 import React from 'react';
 import Image from 'next/image'
-import categories from '../Constants/CATEGORIES'
-const FoodCategories = () => {
+import restaurants from '../Constants/RESTAURANTS'
+const PopularRestaurants = () => {
     return (
-        <div className='max-w-7xl mx-auto mb-5'>
+        <div className='max-w-7xl mx-auto'>
             <h2 className="text-xl md:text-2xl font-bold mb-8 ml-5">
-                Order.uk Popular Categories 🤩
+                Popular Restaurants
             </h2>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-                {categories.map((category) => (
+                {restaurants.map((category) => (
                     <div
                         key={category.id}
                         className="group cursor-pointer transition-transform duration-300 hover:scale-105"
@@ -37,4 +37,4 @@ const FoodCategories = () => {
     );
 };
 
-export default FoodCategories;
+export default PopularRestaurants;
