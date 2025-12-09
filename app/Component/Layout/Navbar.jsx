@@ -60,7 +60,7 @@ const Navbar = () => {
             </div>
             {/* Header */}
             <header>
-                <div className="max-w-7xl mx-auto mb-5">
+                <div className="max-w-7xl mx-auto mb-5 p-5">
                     {/* Navigation */}
                     <nav className="flex items-center justify-between py-4">
                         <div className="flex items-center gap-8">

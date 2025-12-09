@@ -4,16 +4,16 @@ import img1 from '../../../public/images/friends-laughing-using-mobiles 2.png'
 import logo from '../../../public/images/LOGO 1.png'
 const OrderingApp = () => {
     return (
-        <div className='max-w-7xl mx-auto p-5'>
-            <div className="bg-gray-200 rounded-3xl overflow-hidden p-2">
+        <div className='max-w-7xl mx-auto p-5 mt-16'> 
+            <div className="bg-gray-200 rounded-3xl relative p-2">
                 <div className="grid md:grid-cols-2 items-center">
-                    <div className="relative h-96 md:h-full bg-gray-200 flex items-center justify-center">
+
+                    <div className="relative h-96 bg-gray-200 md:mb-0 mb-10"> 
                         <Image
                             src={img1}
                             alt=''
-                            className=''
+                            className='absolute bottom-0 left-1/2 -translate-x-1/2 h-[115%] w-auto max-w-none z-10'
                         />
-
                     </div>
 
                     <div className="">

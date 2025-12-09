@@ -10,7 +10,7 @@ const HeroSection = () => {
         <div className='max-w-7xl mx-auto p-5'>
             <div className="relative w-full bg-[#050E29] overflow-hidden flex items-center justify-center font-sans rounded-2xl">
 
-                <div className="hidden lg:absolute lg:top-10 lg:right-0  lg:w-[38%] lg:h-full lg:bg-[#FF9209] lg:rounded-l-[100px]  lg:z-0"></div>
+                <div className="hidden lg:block absolute lg:top-10 lg:right-0  lg:w-[38%] lg:h-full lg:bg-[#FF9209] lg:rounded-l-[100px]  lg:z-0"></div>
 
                     <div className="relative z-10 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
@@ -25,9 +25,9 @@ const HeroSection = () => {
                             </h1>
 
                             <div className="space-y-2">
-                                <p className="text-gray-400 text-sm pl-2">Enter a postcode to see what we deliver</p>
+                                <p className="text-sm pl-2">Enter a postcode to see what we deliver</p>
 
-                                <div className="flex gap-2 relative md:w-[24vw]">
+                                <div className="flex gap-2 relative md:w-[24vw] mb-5">
                                     <input
                                         type="text"
                                         placeholder="e.g. EC4R 3TE"
