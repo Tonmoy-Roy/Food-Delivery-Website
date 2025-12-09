@@ -5,7 +5,7 @@ import logo from '../../../public/images/LOGO 1.png'
 const OrderingApp = () => {
     return (
         <div className='max-w-7xl mx-auto p-5'>
-            <div className="bg-gray-200 rounded-3xl overflow-hidden">
+            <div className="bg-gray-200 rounded-3xl overflow-hidden p-2">
                 <div className="grid md:grid-cols-2 items-center">
                     <div className="relative h-96 md:h-full bg-gray-200 flex items-center justify-center">
                         <Image

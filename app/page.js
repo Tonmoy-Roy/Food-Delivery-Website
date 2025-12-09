@@ -4,6 +4,7 @@ import ExclusiveDeals from "./Component/Sections/ExclusiveDeals";
 import FoodCategories from "./Component/Sections/FoodCategories";
 import HeroSection from "./Component/Sections/HeroSection";
 import OrderingApp from "./Component/Sections/OrderingApp";
+import PartnerRide from "./Component/Sections/PartnerRide";
 import PopularRestaurants from "./Component/Sections/PopularRestaurants";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <FoodCategories></FoodCategories>
       <PopularRestaurants></PopularRestaurants>
       <OrderingApp></OrderingApp>
+      <PartnerRide></PartnerRide>
       <Footer></Footer>
     </>
   );
