@@ -34,16 +34,16 @@ const Navbar = () => {
                         {/* Cart and Login */}
                         <div className="flex items-center gap-4 ml-auto mt-[-2]">
                             <button className="relative bg-green-700 text-white px-4 py-2 rounded-b-lg flex items-center">
-                                <div className="flex items-center gap-2 divide-x divide-white">
+                                <div className="flex items-center gap-2">
 
-                                    <div className="pr-2">
+                                    <div className="pr-2 border-r">
                                         <Image src={busket} alt="" />
                                     </div>
-                                    <div>
+                                    <div className='border-r'>
                                         <span className="hidden sm:inline pr-2">23 Items</span>
                                     </div>
 
-                                    <div className="flex items-center gap-2 pl-2 pr-2">
+                                    <div className="flex items-center gap-2 pl-2 pr-2 border-r">
                                         <span className="font-semibold">GBP 79.89</span>
                                     </div>
 
