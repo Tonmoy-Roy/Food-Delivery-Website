@@ -3,6 +3,7 @@ import Navbar from "./Component/Layout/Navbar";
 import ExclusiveDeals from "./Component/Sections/ExclusiveDeals";
 import FoodCategories from "./Component/Sections/FoodCategories";
 import HeroSection from "./Component/Sections/HeroSection";
+import OrderingApp from "./Component/Sections/OrderingApp";
 import PopularRestaurants from "./Component/Sections/PopularRestaurants";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <ExclusiveDeals></ExclusiveDeals>
       <FoodCategories></FoodCategories>
       <PopularRestaurants></PopularRestaurants>
+      <OrderingApp></OrderingApp>
       <Footer></Footer>
     </>
   );

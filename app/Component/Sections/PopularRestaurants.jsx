@@ -3,7 +3,7 @@ import Image from 'next/image'
 import restaurants from '../Constants/RESTAURANTS'
 const PopularRestaurants = () => {
     return (
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-7xl mx-auto p-5'>
             <h2 className="text-xl md:text-2xl font-bold mb-8 ml-5">
                 Popular Restaurants
             </h2>

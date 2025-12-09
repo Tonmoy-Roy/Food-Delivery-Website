@@ -3,7 +3,7 @@ import Image from 'next/image'
 import categories from '../Constants/CATEGORIES'
 const FoodCategories = () => {
     return (
-        <div className='max-w-7xl mx-auto mb-5'>
+        <div className='max-w-7xl mx-auto mb-5 p-5'>
             <h2 className="text-xl md:text-2xl font-bold mb-8 ml-5">
                 Order.uk Popular Categories 🤩
             </h2>
