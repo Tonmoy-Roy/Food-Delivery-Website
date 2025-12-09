@@ -5,7 +5,7 @@ import mainimg from '../../../public/images/Untitled-2 1.png'
 import mainimg1 from '../../../public/images/Untitled-1 1.png'
 const HeroSection = () => {
     return (
-        <div>
+        <div className='mb-5'>
             {/* Hero Section */}
             <section className="p-5 max-w-7xl mx-auto relative hero-bg overflow-hidden  border-red-600 rounded-lg">
                 <div className="">

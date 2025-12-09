@@ -6,9 +6,9 @@ const ExclusiveDeals = () => {
     const [activeCategory, setActiveCategory] = useState('Pizza & Fast food');
     const categories = ['Vegan', 'Sushi', 'Pizza & Fast food', 'others'];
     return (
-        <div className='p-5 max-w-7xl mx-auto '>
+        <div className='max-w-7xl mx-auto mb-5'>
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
-                <h1 className="text-2xl md:text-3xl font-bold">
+                <h1 className="text-xl md:text-2xl font-bold">
                     Up to -40% 🎊 Order.uk exclusive deals
                 </h1>
 
@@ -49,7 +49,7 @@ const ExclusiveDeals = () => {
 
                             <div className="absolute bottom-4 left-4 text-white">
                                 <p className="text-orange-400 text-sm font-medium mb-1">Restaurant</p>
-                                <h3 className="text-xl font-bold">{deal.restaurant}</h3>
+                                <h3 className="text-lg font-bold">{deal.restaurant}</h3>
                             </div>
                         </div>
                     </div>
