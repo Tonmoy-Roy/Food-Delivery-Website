@@ -80,7 +80,7 @@ const CountNumbers = () => {
         return num.toLocaleString();
     };
     return (
-        <div ref={sectionRef} className='max-w-7xl mx-auto p-5'>
+        <div ref={sectionRef} className='max-w-7xl mx-auto p-5 mb-5'>
             <div className="bg-orange-500 rounded-2xl overflow-hidden">
                 <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-orange-400">
                     {stats.map((stat, index) => (
