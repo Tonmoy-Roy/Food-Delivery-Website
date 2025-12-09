@@ -37,7 +37,7 @@ const OrderingApp = () => {
                                 <span className="text-white font-semibold text-2xl">& Instant</span>
                             </div>
 
-                            <p className=" mb-8 text-lg">
+                            <p className="mb-8 text-lg">
                                 Download the Order.uk app for faster ordering
                             </p>
 
