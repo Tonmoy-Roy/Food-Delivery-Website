@@ -6,6 +6,8 @@ import burger from '../../../../public/images/Rectangle 44.png'
 import Offers from './Offers';
 import Cards from './Cards';
 import Burgers from './Burgers';
+import Fries from './Fries';
+import ColdDrinks from './ColdDrinks';
 const RestaurantHero = () => {
     return (
         <div className='max-w-7xl mx-auto p-5'>
@@ -81,6 +83,8 @@ const RestaurantHero = () => {
             <Offers></Offers>
             <Cards></Cards>
             <Burgers></Burgers>
+            <Fries></Fries>
+            <ColdDrinks></ColdDrinks>
         </div>
     );
 };

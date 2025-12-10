@@ -1,0 +1,42 @@
+'use client'
+import React from 'react';
+import Image from 'next/image'
+import meals from '../../Constants/MEALS'
+import plus from '../../../../public/images/Plus.png'
+
+const Fries = () => {
+    const MealCard = ({ title, items, price, imageUrl }) => (
+        <div className="bg-white rounded-xl shadow-md p-4 md:w-[25vw] md:flex justify-between border border-gray-100 hover:shadow-lg transition-shadow">
+            <div className='md:w-[13vw]'>
+                <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
+                <p className="text-sm text-gray-600 mt-2 mb-3">{items}</p>
+                <span className="text-lg font-bold text-gray-900">GBP {price}</span>
+            </div>
+            <div className="relative w-32 h-32 rounded-xl overflow-hidden">
+                <Image
+                    src={imageUrl}
+                    alt={title}
+                    className="w-full h-full object-cover"
+                />
+
+                <button className="absolute -bottom-3 -right-3 bg-white shadow-lg rounded-l-2xl p-2">
+                    <Image src={plus} alt='' className='' />
+                </button>
+            </div>
+        </div>
+    );
+    return (
+        <div className="">
+            <p className='text-3xl font-bold mb-5'>Fries</p>
+            <div className="max-w-7xl mx-auto px-4 py-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {meals.map((meal, index) => (
+                        <MealCard key={index} {...meal} />
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Fries;

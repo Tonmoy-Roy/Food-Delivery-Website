@@ -1,9 +1,11 @@
 import React from 'react';
 import menuItems from '../../Constants/MENUITEMS';
+import plus from '../../../../public/images/Plus.png'
 import Image from 'next/image';
 const Burgers = () => {
     return (
         <div className="max-w-7xl mx-auto px-4 py-8">
+            <p className='text-3xl font-bold mb-5'>Burgers</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {menuItems.map((item) => (
                     <div
@@ -25,29 +27,15 @@ const Burgers = () => {
                                 </p>
                             </div>
 
-                            <div className="relative flex flex-col items-center justify-between">
-                                <div className="w-full h-32 rounded-xl overflow-hidden mb-3">
-                                    <Image
-                                        src={item.image}
-                                        alt={item.title}
-                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                                    />
-                                </div>
+                            <div className="relative w-32 h-32 rounded-xl overflow-hidden">
+                                <Image
+                                    src={item.image}
+                                    alt=""
+                                    className="w-full h-full object-cover"
+                                />
 
-                                <button className="bg-slate-900 hover:bg-slate-800 text-white rounded-full p-2.5 shadow-lg transition-all duration-300 group-hover:scale-110">
-                                    <svg
-                                        className="w-5 h-5"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth={3}
-                                            d="M12 4v16m8-8H4"
-                                        />
-                                    </svg>
+                                <button className="absolute -bottom-3 -right-3 bg-white shadow-lg rounded-l-2xl p-2">
+                                    <Image src={plus} alt='' className=''/>
                                 </button>
                             </div>
                         </div>
