@@ -8,6 +8,7 @@ import Cards from './Cards';
 import Burgers from './Burgers';
 import Fries from './Fries';
 import ColdDrinks from './ColdDrinks';
+import DaliveryInformation from './DaliveryInformation';
 const RestaurantHero = () => {
     return (
         <div className='max-w-7xl mx-auto p-5'>
@@ -85,6 +86,7 @@ const RestaurantHero = () => {
             <Burgers></Burgers>
             <Fries></Fries>
             <ColdDrinks></ColdDrinks>
+            <DaliveryInformation></DaliveryInformation>
         </div>
     );
 };
