@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
-import img1 from '../../../public/images/friends-laughing-using-mobiles 2.png'
-import logo from '../../../public/images/LOGO 1.png'
+import img1 from '../../../../public/images/friends-laughing-using-mobiles 2.png'
+import logo from '../../../../public/images/LOGO 1.png'
 const OrderingApp = () => {
     return (
         <div className='max-w-7xl mx-auto p-5 mt-16'> 

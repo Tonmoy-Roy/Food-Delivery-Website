@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Image from 'next/image'
 import logo from '../../../public/images/LOGO 1.png'
@@ -6,7 +7,13 @@ import busket from '../../../public/images/Full Shopping Basket.png'
 import download from '../../../public/images/Forward Button.png'
 import star from '../../../public/images/star.png'
 import location from '../../../public/images/Location.png'
+import Link from 'next/link';
+import { usePathname } from "next/navigation";
+
 const Navbar = () => {
+    const pathname = usePathname();
+    const isActive = (path) => pathname === path;
+
     return (
         <div className="">
             <div className="bg-gray-50 border-gray-100 border-2 pl-3 text-center text-sm max-w-7xl mx-auto rounded-b-xl mb-5">
@@ -73,11 +80,45 @@ const Navbar = () => {
                             </div>
                             {/* Nav Links */}
                             <div className="hidden lg:flex items-center gap-1">
-                                <a href="#" className="px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">Home</a>
-                                <a href="#" className="px-6 py-2 hover:bg-gray-100 rounded-full transition">Browse Menu</a>
-                                <a href="#" className="px-6 py-2 hover:bg-gray-100 rounded-full transition">Special Offers</a>
-                                <a href="#" className="px-6 py-2 hover:bg-gray-100 rounded-full transition">Restaurants</a>
-                                <a href="#" className="px-6 py-2 hover:bg-gray-100 rounded-full transition">Track Order</a>
+                                <Link
+                                    href="/"
+                                    className={`px-6 py-2 rounded-full transition 
+          ${isActive("/") ? "bg-orange-500 text-white" : "hover:bg-gray-100"}`}
+                                >
+                                    Home
+                                </Link>
+
+                                <Link
+                                    href=""
+                                    className={`px-6 py-2 rounded-full transition 
+          ${isActive("/browse-menu") ? "bg-orange-500 text-white" : "hover:bg-gray-100"}`}
+                                >
+                                    Browse Menu
+                                </Link>
+
+                                <Link
+                                    href=""
+                                    className={`px-6 py-2 rounded-full transition 
+          ${isActive("/special-offers") ? "bg-orange-500 text-white" : "hover:bg-gray-100"}`}
+                                >
+                                    Special Offers
+                                </Link>
+
+                                <Link
+                                    href="/Restaurant"
+                                    className={`px-6 py-2 rounded-full transition 
+          ${isActive("/Restaurant") ? "bg-orange-500 text-white" : "hover:bg-gray-100"}`}
+                                >
+                                    Restaurants
+                                </Link>
+
+                                <Link
+                                    href=""
+                                    className={`px-6 py-2 rounded-full transition 
+          ${isActive("/track-order") ? "bg-orange-500 text-white" : "hover:bg-gray-100"}`}
+                                >
+                                    Track Order
+                                </Link>
                             </div>
                         </div>
 

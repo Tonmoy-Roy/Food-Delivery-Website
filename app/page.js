@@ -1,19 +1,18 @@
 import Footer from "./Component/Layout/Footer";
-import Navbar from "./Component/Layout/Navbar";
-import CountNumbers from "./Component/Sections/CountNumbers";
-import ExclusiveDeals from "./Component/Sections/ExclusiveDeals";
-import FoodCategories from "./Component/Sections/FoodCategories";
-import HeroSection from "./Component/Sections/HeroSection";
-import KnowMore from "./Component/Sections/KnowMore";
-import OrderingApp from "./Component/Sections/OrderingApp";
-import PartnerRide from "./Component/Sections/PartnerRide";
-import PopularRestaurants from "./Component/Sections/PopularRestaurants";
+import CountNumbers from "./Component/Sections/HomePage/CountNumbers";
+import ExclusiveDeals from "./Component/Sections/HomePage/ExclusiveDeals";
+import FoodCategories from "./Component/Sections/HomePage/FoodCategories";
+import HeroSection from "./Component/Sections/HomePage/HeroSection";
+import KnowMore from "./Component/Sections/HomePage/KnowMore";
+import OrderingApp from "./Component/Sections/HomePage/OrderingApp";
+import PartnerRide from "./Component/Sections/HomePage/PartnerRide";
+import PopularRestaurants from "./Component/Sections/HomePage/PopularRestaurants";
+import RestaurantHero from "./Component/Sections/RestaurantHero/RestaurantHero";
 
 export default function Home() {
   return (
     <>
-      <Navbar></Navbar>
-      <HeroSection></HeroSection>
+      <HeroSection />
       <ExclusiveDeals></ExclusiveDeals>
       <FoodCategories></FoodCategories>
       <PopularRestaurants></PopularRestaurants>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import cards from '../Constants/CARDS'
+import cards from '../../Constants/CARDS'
 const PartnerRide = () => {
     return (
         <div className='max-w-7xl mx-auto p-5'>

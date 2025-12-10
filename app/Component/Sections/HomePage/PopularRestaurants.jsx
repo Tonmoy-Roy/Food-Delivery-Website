@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import restaurants from '../Constants/RESTAURANTS'
+import restaurants from '../../Constants/RESTAURANTS'
 const PopularRestaurants = () => {
     return (
         <div className='max-w-7xl mx-auto p-5'>

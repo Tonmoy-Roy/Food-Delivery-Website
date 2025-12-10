@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import categories from '../Constants/CATEGORIES'
+import categories from '../../Constants/CATEGORIES'
 const FoodCategories = () => {
     return (
         <div className='max-w-7xl mx-auto mb-5 p-5'>

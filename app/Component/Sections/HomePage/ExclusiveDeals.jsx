@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image'
-import deals from '../Constants/DEALS'
+import deals from '../../Constants/DEALS'
 const ExclusiveDeals = () => {
     const [activeCategory, setActiveCategory] = useState('Pizza & Fast food');
     const categories = ['Vegan', 'Sushi', 'Pizza & Fast food', 'others'];

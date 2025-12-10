@@ -1,10 +1,10 @@
 'use client'
 import React, { useState } from 'react';
-import steps from  '../Constants/STEPS';
+import steps from  '../../Constants/STEPS';
 import Image from 'next/image'
-import img1 from '../../../public/images/order-food 1.png'
-import img2 from '../../../public/images/food 2.png'
-import img3 from '../../../public/images/order 3.png'
+import img1 from '../../../../public/images/order-food 1.png'
+import img2 from '../../../../public/images/food 2.png'
+import img3 from '../../../../public/images/order 3.png'
 const KnowMore = () => {
     const [activeTab, setActiveTab] = useState('Frequent Questions');
     const [activeQuestion, setActiveQuestion] = useState('How does Order.UK work?');
