@@ -5,6 +5,7 @@ import motorcross from '../../../../public/images/Motocross.png'
 import burger from '../../../../public/images/Rectangle 44.png'
 import Offers from './Offers';
 import Cards from './Cards';
+import Burgers from './Burgers';
 const RestaurantHero = () => {
     return (
         <div className='max-w-7xl mx-auto p-5'>
@@ -79,6 +80,7 @@ const RestaurantHero = () => {
             </div>
             <Offers></Offers>
             <Cards></Cards>
+            <Burgers></Burgers>
         </div>
     );
 };
