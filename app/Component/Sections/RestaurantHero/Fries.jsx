@@ -26,9 +26,9 @@ const Fries = () => {
         </div>
     );
     return (
-        <div className="">
-            <p className='text-3xl font-bold mb-5'>Fries</p>
-            <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="mb-10">
+            <p className='text-2xl font-bold mb-5 fries-color'>Fries</p>
+            <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {meals.map((meal, index) => (
                         <MealCard key={index} {...meal} />

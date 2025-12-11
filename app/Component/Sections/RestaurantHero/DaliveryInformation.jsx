@@ -26,7 +26,7 @@ const DaliveryInformation = () => {
     ];
 
     return (
-        <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-[1fr_1fr_auto] gap-0 shadow-lg rounded-3xl overflow-hidden">
                 <div className="bg-white p-8">
                     <div className="flex items-center gap-3 mb-6">

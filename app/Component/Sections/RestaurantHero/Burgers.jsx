@@ -4,8 +4,8 @@ import plus from '../../../../public/images/Plus.png'
 import Image from 'next/image';
 const Burgers = () => {
     return (
-        <div className="max-w-7xl mx-auto px-4 py-8">
-            <p className='text-3xl font-bold mb-5'>Burgers</p>
+        <div className="max-w-7xl mx-auto mb-10">
+            <p className='text-2xl font-bold mb-5'>Burgers</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {menuItems.map((item) => (
                     <div

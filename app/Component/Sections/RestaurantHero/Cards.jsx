@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
+import plus from '../../../../public/images/Plus.png'
 import offers from '../../Constants/OFFERS'
 const Cards = () => {
     return (
@@ -34,21 +35,9 @@ const Cards = () => {
                             </div>
                         </div>
 
-                        <div className="absolute bottom-6 right-6 bg-white rounded-full p-3 shadow-lg hover:bg-orange-500 hover:text-white transition-all duration-300 group-hover:scale-110">
-                            <svg
-                                className="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth={3}
-                                    d="M12 4v16m8-8H4"
-                                />
-                            </svg>
-                        </div>
+                        <button className="absolute -bottom-3 -right-3 bg-white shadow-lg rounded-l-2xl p-4">
+                            <Image src={plus} alt='' className='' />
+                        </button>
                     </div>
                 ))}
             </div>

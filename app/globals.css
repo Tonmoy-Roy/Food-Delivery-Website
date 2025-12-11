@@ -42,6 +42,10 @@ body {
   background-color: #982D70;
 }
 
+.fries-color {
+  color: #FC8A06;
+}
+
 .animate-count {
   transition: all 4s ease-out;
 }

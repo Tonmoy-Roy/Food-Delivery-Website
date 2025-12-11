@@ -9,48 +9,49 @@ import Burgers from './Burgers';
 import Fries from './Fries';
 import ColdDrinks from './ColdDrinks';
 import DaliveryInformation from './DaliveryInformation';
+import clock from '../../../../public/images/Clock.png'
 const RestaurantHero = () => {
     return (
         <div className='max-w-7xl mx-auto p-5'>
-            <div className="bg-gradient-to-r from-gray-100 to-gray-50 rounded-2xl overflow-hidden shadow-lg">
-                <div className="grid md:grid-cols-[1fr_auto] gap-4 p-6">
-                    <div className="flex flex-col justify-between">
+            <div className="relaive bg-gradient-to-r from-gray-100 to-gray-50 rounded-2xl overflow-hidden shadow-lg">
+                <div className="grid md:grid-cols-[1fr_auto] gap-4 p-6 md:h-[60vh] h-140">
+                    <div className="flex flex-col justify-center">
                         <div className="mb-3">
                             <span className="text-sm text-gray-600">I'm lovin' it!</span>
                         </div>
 
                         <div className="mb-4">
                             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                                McDonald's <span className="font-normal text-gray-700">East London</span>
+                                McDonald's <span className="font-bold text-gray-900">East London</span>
                             </h2>
 
                             <div className="flex flex-wrap gap-3">
-                                <div className="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm">
+                                <div className="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm md:h-[8vh]">
                                     <Image src={orderimg} alt="" className="" />
                                     <span className="font-medium">Minimum Order: 12 GBP</span>
                                 </div>
 
-                                <div className="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm">
+                                <div className="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm mb-10">
                                     <Image src={motorcross} alt="" className="" />
                                     <span className="font-medium">Delivery in 20-25 Minutes</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="inline-flex items-center gap-2 bg-orange-500 text-white px-4 py-2.5 rounded-full w-fit">
-                            <div className="w-2 h-2 bg-white rounded-full"></div>
+                        <div className="absolute md:-bottom-5 md:left-35 bottom-18 inline-flex items-center gap-2 bg-orange-500 text-white px-4 py-2.5 rounded-full md:rounded-r-lg md:rounded-l-none w-fit">
+                            <Image src={clock} alt='' className='' />
                             <span className="font-semibold text-sm">Open until 3:00 AM</span>
                         </div>
                     </div>
 
-                    <div className="flex flex-col items-center gap-4">
-                        <div className="relative w-48 h-36 rounded-xl overflow-hidden shadow-lg">
-                            <Image src={burger} alt="" className="" />
+                    <div className="relative flex flex-col items-center justify-center gap-4 mt-5 md:mt-0">
+                        <div className="rounded-xl overflow-hidden shadow-lg">
+                            <Image src={burger} alt="" className="md:h-[40vh] md:w-[25vw] h-40 w-50" />
                         </div>
 
-                        <div className="bg-white rounded-lg px-6 py-3 shadow-md">
-                            <div className="flex items-center gap-2">
-                                <span className="text-3xl font-bold text-gray-900">3.4</span>
+                        <div className="absolute md:bottom-10 md:-left-20 -left-1 -bottom-10 bg-white rounded-lg px-6 py-3 shadow-md transform -translate-x-2 translate-y-2 md:h-[20vh] md:w-[10vw] h-30 w-20">
+                            <div className="items-center justify-center gap-2">
+                                <span className="md:text-6xl text-2xl font-semibold text-gray-700">3.4</span>
                                 <div className="flex flex-col">
                                     <div className="flex gap-0.5">
                                         {[1, 2, 3].map((star) => (

@@ -7,7 +7,7 @@ import data from '../../Constants/DRINKS'
 const ColdDrinks = () => {
     const MenuCard = ({ title, desc, price, img }) => {
         return (
-            <div className="bg-white rounded-2xl shadow-md p-5 flex gap-5 relative">
+            <div className="bg-white rounded-2xl p-5 flex gap-5 relative shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
                 <div className="flex-1">
                     <h2 className="text-lg font-semibold">{title}</h2>
                     <p className="text-sm text-gray-600 mt-2 leading-relaxed">{desc}</p>
@@ -31,9 +31,9 @@ const ColdDrinks = () => {
     };
 
     return (
-        <div>
-            <p className='text-3xl font-bold mb-5'>Cold Drinks</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 my-10">
+        <div className='mb-10'>
+            <p className='text-2xl font-bold mb-5 fries-color'>Cold Drinks</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
                 {data.map((item, i) => (
                     <MenuCard key={i} {...item} />
                 ))}
