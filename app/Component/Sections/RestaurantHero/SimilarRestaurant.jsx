@@ -1,16 +1,15 @@
 import React from 'react';
 import Restaurants from '../../Reusable/Restaurants';
 
-const PopularRestaurants = () => {
+const SimilarRestaurant = () => {
     return (
-        <div className='max-w-7xl mx-auto p-5'>
+        <div className='mb-10'>
             <h2 className="text-xl md:text-2xl font-bold mb-8 ml-5">
-                Popular Restaurants
+                Similar Restaurants
             </h2>
-
             <Restaurants></Restaurants>
         </div>
     );
 };
 
-export default PopularRestaurants;
+export default SimilarRestaurant;

@@ -5,14 +5,7 @@ import { Search, Check, Clock } from 'lucide-react';
 import mainimg from '../../../../public/images/Untitled-2 1.png';
 import mainimg1 from '../../../../public/images/Untitled-1 1.png';
 import orderimg from '../../../../public/images/LOGO 1.png';
-import ExclusiveDeals from './ExclusiveDeals';
-import FoodCategories from './FoodCategories';
-import PopularRestaurants from './PopularRestaurants';
-import PartnerRide from './PartnerRide';
-import KnowMore from './KnowMore';
-import CountNumbers from './CountNumbers';
-import OrderingApp from './OrderingApp';
-import Footer from '../../Layout/Footer';
+
 const HeroSection = () => {
     return (
         <div className='max-w-7xl mx-auto p-5'>

@@ -3,10 +3,9 @@ import React, { useState } from 'react';
 import reviews from '../../Constants/REVIEWS';
 import Image from 'next/image'
 import time from '../../../../public/images/Time Span.png'
+import ReviewCard from '../../Reusable/ReviewCard';
 const CustomerReviews = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-
-
     const itemsPerView = 3;
     const maxIndex = Math.max(0, reviews.length - itemsPerView);
 
@@ -20,7 +19,7 @@ const CustomerReviews = () => {
 
     return (
         <div className="relative left-1/2 right-1/2 max-w-screen w-screen -mx-[50.5vw]
-                customer-bg border-b border-gray-200 mb-5 py-16">
+                customer-bg border-b border-gray-200 mb-20 py-16">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center mb-8">
                     <h2 className="text-4xl font-bold">Customer Reviews</h2>
@@ -95,7 +94,10 @@ const CustomerReviews = () => {
                         ))}
                     </div>
                 </div>
-               
+
+            </div>
+            <div className='absolute -bottom-15 left-1/2 bg-white rounded-lg px-6 py-3 shadow-md transform -translate-x-2 translate-y-2 md:h-[20vh] md:w-[10vw] h-30 w-20'>
+                <ReviewCard></ReviewCard>
             </div>
         </div>
     );
