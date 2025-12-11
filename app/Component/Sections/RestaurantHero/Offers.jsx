@@ -43,8 +43,8 @@ const Offers = () => {
             <div className="relative left-1/2 right-1/2 max-w-screen w-screen -mx-[51vw]
                 bg-gray-100 border-b border-gray-200 mb-5">
 
-                <div className="p-5 rounded md:ml-30 ml-5">
-                    <nav className="md:flex md:space-x-12 space-x-6 overflow-x-auto scrollbar-hide" aria-label="Menu categories">
+                <div className="p-5 rounded md:ml-35 ml-5">
+                    <nav className="md:flex md:space-x-11 space-x-6 overflow-x-auto scrollbar-hide" aria-label="Menu categories">
                         {tabs.map((tab) => (
                             <button
                                 key={tab}
