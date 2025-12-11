@@ -1,12 +1,28 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import reviews from '../../Constants/REVIEWS';
 import Image from 'next/image'
 import time from '../../../../public/images/Time Span.png'
 import ReviewCard from '../../Reusable/ReviewCard';
 const CustomerReviews = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const itemsPerView = 3;
+    const [itemsPerView, setItemsPerView] = useState(3);
+
+    useEffect(() => {
+        const updateItemsPerView = () => {
+            if (window.innerWidth < 768) {
+                setItemsPerView(1);
+            } else {
+                setItemsPerView(3);
+            }
+        };
+
+        updateItemsPerView();
+        window.addEventListener("resize", updateItemsPerView);
+
+        return () => window.removeEventListener("resize", updateItemsPerView);
+    }, []);
+
     const maxIndex = Math.max(0, reviews.length - itemsPerView);
 
     const handlePrev = () => {
@@ -48,22 +64,22 @@ const CustomerReviews = () => {
 
                 <div className="overflow-hidden mb-12">
                     <div
-                        className="md:flex transition-transform duration-500 ease-in-out gap-6"
-                        style={{ transform: `translateX(-${currentIndex * (100 / itemsPerView + 2)}%)` }}
+                        className="flex transition-transform duration-500 ease-in-out gap-6"
+                        style={{
+                            transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
+                        }}
                     >
                         {reviews.map((review) => (
                             <div
                                 key={review.id}
                                 className="bg-white rounded-2xl p-6 shadow-lg flex-shrink-0"
-                                style={{ width: `calc(${100 / itemsPerView}% - 16px)` }}
+                                style={{
+                                    width: `calc(${100 / itemsPerView}% - 16px)`,
+                                }}
                             >
                                 <div className="flex items-start justify-between mb-4">
                                     <div className="flex items-center gap-3">
-                                        <Image
-                                            src={review.avatar}
-                                            alt={review.name}
-                                            className="w-12 h-12 rounded-full object-cover"
-                                        />
+                                        <Image src={review.avatar} alt={review.name} className="w-12 h-12 rounded-full object-cover" />
                                         <div>
                                             <h3 className="font-bold text-gray-900">{review.name}</h3>
                                             <p className="text-orange-500 text-sm">{review.location}</p>
@@ -78,14 +94,13 @@ const CustomerReviews = () => {
                                                 </svg>
                                             ))}
                                         </div>
+
                                         <div className="flex items-center gap-2 text-gray-500 text-xs">
                                             <Image src={time} alt="" className="" />
                                             <span>{review.date}</span>
                                         </div>
                                     </div>
-
                                 </div>
-
 
                                 <p className="text-gray-700 text-sm leading-relaxed mb-4">
                                     {review.review}
@@ -93,11 +108,11 @@ const CustomerReviews = () => {
                             </div>
                         ))}
                     </div>
-                </div>
 
-            </div>
-            <div className='absolute -bottom-15 left-1/2 bg-white rounded-lg px-6 py-3 shadow-md transform -translate-x-2 translate-y-2 md:h-[20vh] md:w-[10vw] h-30 w-20'>
-                <ReviewCard></ReviewCard>
+                </div>
+                <div className='absolute -bottom-15 left-1/2 bg-white rounded-lg px-6 py-3 shadow-md transform -translate-x-2 translate-y-2 md:h-[20vh] md:w-[10vw] h-30 w-20'>
+                    <ReviewCard></ReviewCard>
+                </div>
             </div>
         </div>
     );
