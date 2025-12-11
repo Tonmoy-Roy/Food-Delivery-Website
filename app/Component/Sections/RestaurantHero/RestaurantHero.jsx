@@ -10,12 +10,13 @@ import Fries from './Fries';
 import ColdDrinks from './ColdDrinks';
 import DaliveryInformation from './DaliveryInformation';
 import clock from '../../../../public/images/Clock.png'
+import burger1 from '../../../../public/images/Rectangle 43.png'
 const RestaurantHero = () => {
     return (
         <div className='max-w-7xl mx-auto p-5'>
             <div className="relaive bg-gradient-to-r from-gray-100 to-gray-50 rounded-2xl overflow-hidden shadow-lg">
                 <div className="grid md:grid-cols-[1fr_auto] gap-4 p-6 md:h-[60vh] h-140">
-                    <div className="flex flex-col justify-center">
+                    <div className="flex flex-col justify-end">
                         <div className="mb-3">
                             <span className="text-sm text-gray-600">I'm lovin' it!</span>
                         </div>
@@ -37,8 +38,11 @@ const RestaurantHero = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className='absolute opacity-10 bottom-8'>
+                            <Image src={burger1} alt='' className='md:w-[79.3vw] md:h-[60vh] h-92 w-78'/>
+                        </div>
 
-                        <div className="absolute md:-bottom-5 md:left-35 bottom-18 inline-flex items-center gap-2 bg-orange-500 text-white px-4 py-2.5 rounded-full md:rounded-r-lg md:rounded-l-none w-fit">
+                        <div className="absolute md:bottom-3 md:left-35 bottom-18 inline-flex items-center gap-2 bg-orange-500 text-white px-4 py-2.5 rounded-full md:rounded-r-lg md:rounded-l-none w-fit">
                             <Image src={clock} alt='' className='' />
                             <span className="font-semibold text-sm">Open until 3:00 AM</span>
                         </div>
