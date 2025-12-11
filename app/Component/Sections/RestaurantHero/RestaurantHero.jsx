@@ -14,7 +14,7 @@ import burger1 from '../../../../public/images/Rectangle 43.png'
 const RestaurantHero = () => {
     return (
         <div className='max-w-7xl mx-auto p-5'>
-            <div className="relaive bg-gradient-to-r from-gray-100 to-gray-50 rounded-2xl overflow-hidden shadow-lg">
+            <div className="relaive bg-gradient-to-r from-gray-100 to-gray-50 rounded-2xl overflow-hidden shadow-lg mb-10">
                 <div className="grid md:grid-cols-[1fr_auto] gap-4 p-6 md:h-[60vh] h-140">
                     <div className="flex flex-col justify-end">
                         <div className="mb-3">
@@ -27,12 +27,12 @@ const RestaurantHero = () => {
                             </h2>
 
                             <div className="flex flex-wrap gap-3">
-                                <div className="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm md:h-[8vh]">
+                                <div className="flex items-center gap-2 bg-black text-white px-4 py-2 rounded-full text-sm md:h-[8vh]">
                                     <Image src={orderimg} alt="" className="" />
                                     <span className="font-medium">Minimum Order: 12 GBP</span>
                                 </div>
 
-                                <div className="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm mb-10">
+                                <div className="flex items-center gap-2 text-white px-4 py-2 rounded-full text-sm mb-10 bg-black">
                                     <Image src={motorcross} alt="" className="" />
                                     <span className="font-medium">Delivery in 20-25 Minutes</span>
                                 </div>
