@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
-import Image from 'next/image'
-import search from '../../../../public/images/Search More.png'
+import Image from 'next/image';
+import search from '../../../../public/images/Search More.png';
 const Offers = () => {
     const [activeTab, setActiveTab] = useState('Offers');
 
@@ -21,26 +21,24 @@ const Offers = () => {
 
     return (
         <div>
-            <div>
-                <div className='md:flex justify-between p-10'>
-                    <div className='mb-5'>
-                        <p className='text-xl font-semibold'>All Offers from McDonald’s East London</p>
-                    </div>
-                    <div className='relative'>
-                        <input
-                            type="text"
-                            className='border rounded-full p-3 pl-10 pr-12 w-full'
-                            placeholder='Search from menu'
-                        />
-                        <Image
-                            src={search}
-                            alt="Search icon"
-                            className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5"
-                        />
-                    </div>
+            <div className='md:flex justify-between p-10'>
+                <div className='mb-5'>
+                    <p className='text-xl font-semibold'>All Offers from McDonald’s East London</p>
+                </div>
+                <div className='relative'>
+                    <input
+                        type="text"
+                        className='border rounded-full p-3 pl-10 pr-12 w-full'
+                        placeholder='Search from menu'
+                    />
+                    <Image
+                        src={search}
+                        alt="Search icon"
+                        className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5"
+                    />
                 </div>
             </div>
-            <div className="relative left-1/2 right-1/2 max-w-screen w-screen -mx-[51vw]
+            <div className="relative left-1/2 right-1/2 max-w-screen w-screen -mx-[50.5vw]
                 bg-gray-100 border-b border-gray-200 mb-5">
 
                 <div className="p-5 rounded md:ml-35 ml-5">

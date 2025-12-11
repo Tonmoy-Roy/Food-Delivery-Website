@@ -12,6 +12,7 @@ import DaliveryInformation from './DaliveryInformation';
 import clock from '../../../../public/images/Clock.png'
 import burger1 from '../../../../public/images/Rectangle 43.png'
 import Maps from './Maps';
+import CustomerReviews from './CustomerReviews';
 const RestaurantHero = () => {
     return (
         <div className='max-w-7xl mx-auto p-5'>
@@ -94,6 +95,7 @@ const RestaurantHero = () => {
             <ColdDrinks></ColdDrinks>
             <DaliveryInformation></DaliveryInformation>
             <Maps></Maps>
+            <CustomerReviews></CustomerReviews>
         </div>
     );
 };

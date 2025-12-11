@@ -4,12 +4,11 @@ import map from '../../../../public/images/Rectangle 52.png'
 import location from '../../../../public/images/Previous Location.png'
 const Maps = () => {
     return (
-        <div className='relative '>
+        <div className='relative mb-10'>
             <Image src={map} alt='' className='md:h-[80vh] md:w-screen h-110' />
             <div className="absolute inset-0 md:h-[55vh] md:w-[20vw] w-70 h-75 bg-slate-900 text-white rounded-2xl p-8 shadow-xl top-20 md:ml-20 ml-2">
                 <h2 className="md:text-3xl text-xl font-bold mb-1">McDonald's</h2>
                 <p className="text-orange-400 md:text-xl text-base font-semibold md:mb-6 mb-2">South London</p>
-
                 <p className="text-gray-300 text-sm leading-relaxed md:mb-6 mb-2">
                     Tooley St, London Bridge, London SE1 2TF,<br />
                     United Kingdom
