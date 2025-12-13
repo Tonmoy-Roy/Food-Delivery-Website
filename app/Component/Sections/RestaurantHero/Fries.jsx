@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image'
 import meals from '../../Constants/MEALS'
 import plus from '../../../../public/images/Plus.png'
+import Link from 'next/link';
 
 const Fries = () => {
     const MealCard = ({ title, items, price, imageUrl }) => (
@@ -19,9 +20,9 @@ const Fries = () => {
                     className="w-full h-full object-cover"
                 />
 
-                <button className="absolute -bottom-3 -right-3 bg-white shadow-lg rounded-l-2xl p-2">
+                <Link href={`/Ordering`} className="absolute -bottom-3 -right-3 bg-white shadow-lg rounded-l-2xl p-2 hover:bg-green-600" aria-label={`add-${title || 'meal'}`}>
                     <Image src={plus} alt='' className='' />
-                </button>
+                </Link>
             </div>
         </div>
     );

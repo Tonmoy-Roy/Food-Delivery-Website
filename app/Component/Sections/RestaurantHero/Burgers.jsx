@@ -2,6 +2,7 @@ import React from 'react';
 import menuItems from '../../Constants/MENUITEMS';
 import plus from '../../../../public/images/Plus.png'
 import Image from 'next/image';
+import Link from 'next/link';
 const Burgers = () => {
     return (
         <div className="max-w-7xl mx-auto mb-10">
@@ -34,9 +35,11 @@ const Burgers = () => {
                                     className="w-full h-full object-cover"
                                 />
 
-                                <button className="absolute -bottom-3 -right-3 bg-white shadow-lg rounded-l-2xl p-2">
-                                    <Image src={plus} alt='' className=''/>
-                                </button>
+                                <Link
+                                    href={`/Ordering`}
+                                    className="absolute -bottom-3 -right-3 bg-white shadow-lg rounded-l-2xl p-2 hover:bg-green-600">
+                                    <Image src={plus} alt='' className='' />
+                                </Link>
                             </div>
                         </div>
                     </div>
