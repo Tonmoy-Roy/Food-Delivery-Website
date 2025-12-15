@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
-import map from '../../../../public/images/Rectangle 52.png'
-import location from '../../../../public/images/Previous Location.png'
+import map from '../../../public/images/Rectangle 52.png'
+import location from '../../../public/images/Previous Location.png'
 const Maps = () => {
     return (
         <div className='relative mb-10'>

@@ -1,9 +1,9 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import delivery from '../../../../public/images/Tracking.png'
-import contact from '../../../../public/images/ID Verified.png'
-import clock from '../../../../public/images/Clock1.png'
+import delivery from '../../../public/images/Tracking.png'
+import contact from '../../../public/images/ID Verified.png'
+import clock from '../../../public/images/Clock1.png'
 const DaliveryInformation = () => {
     const deliveryHours = [
         { day: 'Monday', hours: '12:00 AM-3:00 AM, 8:00 AM-3:00 AM' },

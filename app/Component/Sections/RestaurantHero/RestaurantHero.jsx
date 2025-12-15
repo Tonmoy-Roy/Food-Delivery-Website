@@ -8,12 +8,12 @@ import Cards from './Cards';
 import Burgers from './Burgers';
 import Fries from './Fries';
 import ColdDrinks from './ColdDrinks';
-import DaliveryInformation from './DaliveryInformation';
+import DaliveryInformation from '../../Reusable/DaliveryInformation';
 import clock from '../../../../public/images/Clock.png'
 import burger1 from '../../../../public/images/Rectangle 43.png'
-import Maps from './Maps';
-import CustomerReviews from './CustomerReviews';
-import SimilarRestaurant from './SimilarRestaurant';
+import Maps from '../../Reusable/Maps';
+import CustomerReviews from '../../Reusable/CustomerReviews';
+import SimilarRestaurant from '../../Reusable/SimilarRestaurant';
 import ReviewCard from '../../Reusable/ReviewCard';
 const RestaurantHero = () => {
     return (

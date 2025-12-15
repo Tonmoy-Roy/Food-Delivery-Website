@@ -38,8 +38,7 @@ const Offers = () => {
                     />
                 </div>
             </div>
-            <div className="relative left-1/2 right-1/2 max-w-screen w-screen -mx-[50.5vw]
-                bg-gray-100 border-b border-gray-200 mb-5">
+            <div className="relative left-1/2 right-1/2 max-w-screen w-screen -mx-[50.5vw] bg-gray-100 border-b border-gray-200 mb-5">
 
                 <div className="p-5 rounded md:ml-35 ml-5">
                     <nav className="md:flex md:space-x-11 space-x-6 overflow-x-auto scrollbar-hide" aria-label="Menu categories">
@@ -47,12 +46,11 @@ const Offers = () => {
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
-                                className={(
-                                    "relative py-4 px-1 text-sm font-bold whitespace-nowrap transition-all duration-200 border-b-4 ",
+                                className={`relative py-4 px-1 text-sm font-bold whitespace-nowrap transition-all duration-200 border-b-4 ${
                                     activeTab === tab
-                                        ? "border-mcdonalds-red font-semibold bg-black text-white p-1 rounded-full md:w-[5vw]"
-                                        : "text-gray-600 border-transparent hover:text-gray-900 hover:border-gray-300 font-bold"
-                                )}
+                                        ? 'border-mcdonalds-red font-semibold bg-black text-white p-1 rounded-full md:w-[5vw]'
+                                        : 'text-gray-600 border-transparent hover:text-gray-900 hover:border-gray-300 font-bold'
+                                }`}
                             >
                                 {tab}
                             </button>
